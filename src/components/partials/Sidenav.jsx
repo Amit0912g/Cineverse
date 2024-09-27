@@ -49,7 +49,7 @@ const Sidenav = () => {
         </div>
       </nav>
       <hr className="border-none h-[1px] bg-zinc-400 lg:my-1 md:my-10" />
-      <nav className="flex flex-col gap-2 text-xl text-zinc-400">
+      <nav className="flex flex-col gap-2 xl:text-xl text-zinc-400 lg:text-lg md:text-base">
         <h1 className="font-semibold text-white xl:text-xl xl:mt-7 lg:text-lg lg:mt-5 md:mt-8 md:text-base">
           Website Information
         </h1>
