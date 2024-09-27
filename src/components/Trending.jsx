@@ -45,16 +45,20 @@ const Trending = () => {
   return trending.length > 0 ? (
     <div className="w-full h-screen px-[3%] overflow-y-auto ">
       <div className="flex items-center justify-between w-full">
-        <h1 className="text-3xl font-semibold text-zinc-400 ">
+        <h1 className="font-semibold lg:text-3xl text-zinc-400 md:text-xl sm:text-base">
           <i
             onClick={() => navigate(-1)}
-            className="mr-1 ri-arrow-left-line hover:text-[#6556cd] text-3xl cursor-pointer"
+            className="md:mr-1 sm:mr-[1px] ri-arrow-left-line hover:text-[#6556cd] lg:text-3xl cursor-pointer md:text-xl sm:text-base"
           ></i>
           Trending
         </h1>
-        <div className="flex items-center w-[80%]">
-          <TopNav></TopNav>
-          <Dropdown
+        <div className="flex items-center justify-between md:w-[80%] sm:w-[60%] ">
+        
+         <div className=" lg:w-[70%] md:ml-0 sm:-ml-24 ">
+         <TopNav></TopNav>
+         </div>
+         <div className=" w-[40%] gap-1 sm:hidden md:flex  ">
+         <Dropdown
             title="Category"
             options={["movie", "tv", "all"]}
             func={(e) => setCategory(e.target.value)}
@@ -65,6 +69,7 @@ const Trending = () => {
             options={["week", "day"]}
             func={(e) => setDuration(e.target.value)}
           ></Dropdown>
+         </div>
         </div>
       </div>
 
@@ -74,17 +79,17 @@ const Trending = () => {
           <div className="flex mt-3 mb-5 justify-evenly ">
           <button
           onClick={PreviousPage}
-          className="text-2xl font-semibold shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)]  bg-[#6556cd] text-white px-3 py-2 rounded-md"
+          className="lg:text-2xl md:text-lg  font-semibold shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)]  bg-[#6556cd] text-white lg:px-3 lg:py-2 md:px-2 md:py-1 sm:py-2 sm:px-2  rounded-md"
         >
-          <i className="mr-3 text-xl cursor-pointer ri-arrow-left-line"></i>
+          <i className="mr-3 cursor-pointer lg:text-xl md:text-lg ri-arrow-left-line"></i>
           Back
         </button>
         <button
           onClick={nextPage}
-          className="text-2xl shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)] font-semibold bg-[#6556cd] text-white px-3 py-2 rounded-md"
+          className="text-2xl shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)] font-semibold bg-[#6556cd] text-white lg:px-3 lg:py-2 md:px-2 md:py-1 sm:py-2 sm:px-2  rounded-md"
         >
           Next
-          <i className="ml-3 text-xl cursor-pointer ri-arrow-right-line"></i>
+          <i className="ml-3 cursor-pointer lg:text-xl md:text-lg ri-arrow-right-line"></i>
         </button>
       
       </div>
@@ -92,10 +97,10 @@ const Trending = () => {
           <div className="w-full mt-3 mb-5 text-center">
         <button
           onClick={nextPage}
-          className="text-2xl font-semibold shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)] bg-[#6556cd] text-white px-3 py-2 rounded-md"
+          className="lg:text-2xl md:text-lg font-semibold shadow-[8px_7px_28px_2px_rgba(0,0,0,0.5)] bg-[#6556cd] text-white lg:px-3 lg:py-2 md:px-2 md:py-1 sm:py-2 sm:px-2 rounded-md"
         >
           Next
-          <i className="ml-3 text-xl cursor-pointer ri-arrow-right-line"></i>
+          <i className="ml-3 cursor-pointer lg:text-xl md:text-lg ri-arrow-right-line"></i>
         </button></div>
         )
        

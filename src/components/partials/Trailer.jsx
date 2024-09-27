@@ -14,8 +14,6 @@ const Trailer = () => {
     <div className="w-full bg-[rgba(0,0,0,.9)] h-screen flex items-center justify-center absolute top-0 left-0 z-[100] ">
       {ytvideo ? (
         <ReactPlayer
-          height={600}
-          width={900}
           url={`https://www.youtube.com/watch?v=${ytvideo.key}`}
         ></ReactPlayer>
       ) : (

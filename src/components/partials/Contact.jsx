@@ -27,21 +27,21 @@ const Contact = () => {
         minHeight: "100vh",
       }}
     >
-      <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
+      <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg md:p-8 sm:p-5">
       
-        <h1 className="mb-6 text-5xl font-extrabold text-center text-zinc-100">Contact</h1>
+        <h1 className="font-extrabold text-center md:text-5xl md:mb-6 sm:text-3xl text-zinc-100">Contact</h1>
         
      
-        <div className="mb-8 text-center">
-          <h2 className="text-2xl font-bold text-zinc-200">Amit Gupta</h2>
-          <p className="text-lg font-medium text-zinc-200">Phone: 8103140075</p>
-          <p className="text-lg font-medium text-zinc-200">Email: amit.g09122000@gmail.com</p>
+        <div className="text-center md:mb-8 sm:mb-4">
+          <h2 className="font-bold md:text-2xl sm:text-xl text-zinc-200">Amit Gupta</h2>
+          <p className="font-medium sm:text-base md:text-lg text-zinc-200">Phone: 8103140075</p>
+          <p className="font-medium sm:text-base md:text-lg text-zinc-200">Email: amit.g09122000@gmail.com</p>
         </div>
 
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block mb-1 text-lg font-base medium" htmlFor="name">
+            <label className="block mb-1 sm:text-base md:text-lg font-base medium" htmlFor="name">
               Name
             </label>
             <input
@@ -55,7 +55,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block mb-1 text-lg font-medium" htmlFor="email">
+            <label className="block mb-1 font-medium sm:text-base md:text-lg" htmlFor="email">
               Email
             </label>
             <input
@@ -69,7 +69,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label className="block mb-1 text-lg font-medium" htmlFor="message">
+            <label className="block mb-1 font-medium sm:text-base md:text-lg" htmlFor="message">
               Message
             </label>
             <textarea
@@ -84,7 +84,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-3 text-lg font-bold tracking-wide text-white transition duration-300 bg-blue-500 rounded-md hover:bg-blue-600"
+            className="w-full px-4 py-3 font-bold tracking-wide text-white transition duration-300 bg-blue-500 rounded-md sm:text-base md:text-lg hover:bg-blue-600"
           >
             Send Message
           </button>

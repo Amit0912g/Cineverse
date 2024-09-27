@@ -12,12 +12,12 @@ const Header = ({ data }) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="w-full h-[50vh] flex flex-col justify-end items-start p-[3%] "
+      className="w-full xl:h-[50vh] lg:h-[40vh] md:h-[45vh] sm:h-[45vh] flex flex-col justify-end items-start p-[3%] "
     >
-      <h1 className="text-5xl w-[70%] font-bold text-white">
+      <h1 className="xl:text-5xl lg:text-3xl md:text-xl sm:text-base w-[70%] font-bold text-white">
         {data.name || data.title || data.original_name || data.original_titile}
       </h1>
-      <p className="w-[70%] text-white mt-3 mb-3 ">
+      <p className="w-[70%] text-white mt-3 mb-3 md:text-sm lg:text-base sm:text-xs">
         {data.overview.slice(0, 200)}...
         <Link
           to={`/${data.media_type}/details/${data.id}`}
@@ -26,7 +26,7 @@ const Header = ({ data }) => {
           more
         </Link>
       </p>
-      <p className="text-white">
+      <p className="text-white lg:base md:text-sm sm:text-xs">
         {data.release_date ? (
           <i className="mr-1 text-yellow-500 ri-movie-2-fill"></i>
         ) : (
@@ -38,7 +38,7 @@ const Header = ({ data }) => {
       </p>
       <Link
         to={`${data.media_type}/details/${data.id}/trailer`}
-        className="mt-3 bg-[#6556CD] p-3 text-white font-medium rounded"
+        className="lg:mt-3 bg-[#6556CD] lg:p-3 md:p-2 sm:p-1 md:mt-2 sm:mt-3 text-white font-medium rounded sm:text-xs md:text-base lg:text-lg"
       >
         Watch Trailer
       </Link>
