@@ -49,19 +49,19 @@ const Sidenav = () => {
         </div>
       </nav>
       <hr className="border-none h-[1px] bg-zinc-400 lg:my-1 md:my-10" />
-      <nav className="flex flex-col gap-2 xl:text-xl text-zinc-400 lg:text-lg md:text-base">
+      <nav className="flex flex-col gap-2 text-xl text-zinc-400">
         <h1 className="font-semibold text-white xl:text-xl xl:mt-7 lg:text-lg lg:mt-5 md:mt-8 md:text-base">
           Website Information
         </h1>
         <div className="flex flex-col xl:mt-0 lg:mt-5 md:mt-5">
         <Link
           to="/about"
-          className="hover:bg-[#6556CD] hover:text-white rounded-lg xl:p-5 duration-300 flex xl:-ml-0 lg:mx-auto lg:p-4 lg:-ml-[3%] md:text-base md:mt-5 md:p-1 xl:-mt-0"
+          className="hover:bg-[#6556CD] hover:text-white rounded-lg xl:p-5 duration-300 flex xl:-ml-0 lg:mx-auto lg:p-4 lg:-ml-[3%]  md:mt-5 md:p-1 xl:-mt-0"
         >
           <i className="mr-2 ri-information-fill"></i>
           About Us
         </Link>
-        <Link to="/contact" className="hover:bg-[#6556CD] hover:text-white rounded-lg xl:p-5 duration-300 flex xl:-ml-0 lg:mx-auto lg:p-4 lg:-ml-[3%] md:text-base md:mt-5 md:p-1 xl:-mt-0">
+        <Link to="/contact" className="hover:bg-[#6556CD] hover:text-white rounded-lg xl:p-5 duration-300 flex xl:-ml-0 lg:mx-auto lg:p-4 lg:-ml-[3%] md:mt-5 md:p-1 xl:-mt-0">
           <i className="mr-2 ri-phone-fill"></i>
           Contact
         </Link>
